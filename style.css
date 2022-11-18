@@ -1,0 +1,742 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    font-size: 1.5;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.logo{
+    width: 8rem;
+}
+
+svg{
+    cursor: pointer;
+}
+
+#ul-nav li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.addcarrinho{
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(138, 138, 138));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+p{
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-size: larger;
+}
+
+#input-pesquisa{
+    width: 15rem;
+    height: 0.6rem;
+    
+}
+
+svg{
+    margin: 0.3rem;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    color: white;
+}
+
+.social{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    justify-content: center;
+}
+
+.alinhar{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.frase p{
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    margin-top: 3rem;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.frase-invertida bdo{
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 20px -15px 5px rgb(176, 2, 31);
+
+}
+
+.frase-invertida bdo:hover{
+    cursor: default;
+}
+
+.frase-good p{
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    margin: 2rem;
+    font-size: 20px;
+    color: rgba(40, 255, 241, 0.693);
+}
+
+#boasvindas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+}
+
+#boasvindas img{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 10px 0px 30px 0px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+    text-shadow: 15px 10px 10px rgb(84, 84, 84);
+    margin: 1rem;
+}
+
+.botao-remover{
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.671);
+    border-radius: 10px;
+}
+
+.botao-remover:hover{
+    color: red;
+    background-color: rgb(255, 255, 255);
+}
+
+#comprar{
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    padding: 0.8rem;
+    margin: 2rem;
+    background-color: rgba(73, 181, 127, 0.992);
+    border-radius: 10px;
+}
+
+#comprar:hover{
+    color: rgb(228, 255, 251);
+    background-color: rgb(1, 74, 44);
+}
+
+.itens{
+    border-radius: 10px;
+    margin: 2rem;
+    background-color: white;
+    display: flex;
+}
+
+.container{
+    margin: 1rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 295px);
+}
+
+.descricao{
+    max-width: 900px;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.descricao p {
+    margin: 1rem;
+}
+
+.descricao img{
+    margin: 1rem;
+    width: 250px;
+}
+
+/* ============== CARROSSEL DE IMAGENS ===================*/
+
+.swiper {
+width: 1100px;
+height: 350px;
+}
+
+.swiper-slide {
+text-align: center;
+font-size: 18px;
+background-color: rgb(0, 0, 0);
+display: -webkit-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display: flex;
+-webkit-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+-webkit-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+}
+
+.swiper-slide img {
+display: block;
+width: 20%;
+height: auto;
+object-fit: cover;
+}
+
+.swiper {
+margin-left: auto;
+margin-right: auto;
+}
+
+.autor img{
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+.autores{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: center;
+}
+
+.autor{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.autor:hover{
+    transition: 0.5s;
+    opacity: 0.8;    
+}
+
+footer{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(138, 138, 138));
+}
+ 
+.barra-pesquisa{
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+#ul-nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    min-width: 500px;
+    align-items: center;
+    transition: all linear .5s;
+}
+
+nav #ul-nav li{
+    margin: 0px 20px;
+    padding: 0.6rem;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+nav #ul-nav li:hover{
+    background-color: rgb(0, 0, 0); 
+    
+}
+
+
+
+nav{
+    width: 100%;
+    min-height: 5rem;
+    display: flex;
+    background-image: linear-gradient(to right , rgb(32, 32, 32) 50%, rgb(168, 168, 168));
+    align-items: center;
+    justify-content: space-around;
+}
+
+#burger{
+    width: 50px;
+    height: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    cursor: pointer;
+    z-index: 9999;
+
+}
+
+#burger div{
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all linear 0.3s;
+    
+}
+
+#burger > div:nth-child(2){
+    width: 35px;
+}
+
+#burger > div:nth-child(3){
+    width: 15px;
+}
+
+:hover#burger > div{
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#icons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+#burger.active > div:nth-child(2){
+    opacity: 0;
+
+}
+
+#burger.active > div:nth-child(1){
+    transform: rotate(44deg) translateY(18px);
+    width: 40px;
+
+}
+
+#burger.active > div:nth-child(3){
+    transform: rotate(-44deg) translateY(-19px);
+    width: 40px;
+}
+
+#menu-mobile{
+    opacity: 0;
+}
+
+#box-produto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+input{
+    padding: 1rem;
+    border-radius: 30px;
+    margin: 2rem;
+    border: 1px, solid rgb(0, 0, 0);
+}
+
+input:focus{
+    border: 1px solid rgb(64, 61, 62);
+    outline: none;
+}
+
+#box-produto a{
+    margin: 0.5rem;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 73, 54);
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+#box-produto a:hover{
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+#produtos > div{
+    align-items: center;
+    display: flex;
+    min-width: 300px;
+    justify-content: space-between;
+}
+
+#produtos > div > div{
+    display: flex;
+    padding: 0.5rem;
+    min-width: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#titulo{
+    margin: 2rem;
+    color: rgb(86, 215, 162);
+}
+
+.livro{
+    background-color: rgba(255, 255, 255, 0.112);
+    border-radius: 10px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.produtos .detalhes{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid white;
+}
+
+.produtos a{
+    color: black;
+    font-weight: bold;
+    background-color: rgb(76, 173, 157);
+    align-items: center;
+    border-radius: 15px;
+    margin: 0.5rem;
+}
+
+.produtos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+
+}
+
+.produtos a:hover{
+    color: rgb(109, 253, 255);
+    background-color: rgba(21, 46, 38, 0.392);
+    border: none;
+}
+
+
+.produtos img{
+    width: 150px;
+    padding: 1rem;
+}
+
+.boxes{
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+    display: flex;
+}
+
+.boxes img{
+    width: 300px;
+    height: 250px;
+}
+
+.boxes .detalhes{
+    background-color: rgba(255, 255, 255, 0);
+    border: 0px solid white;
+}
+
+.boxes a{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color: rgb(76, 173, 157);
+    align-items: center;
+    border-radius: 15px;
+    margin: 0.5rem;
+}
+
+.boxes a:hover{
+    color: rgb(109, 253, 255);
+    background-color: rgba(21, 46, 38, 0.392);
+    border: none;
+}
+
+
+.texto-seta img{
+    height: 50px;
+    width: 150px;
+}
+
+.texto-seta{
+    margin-top: 4rem;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.texto-seta p{
+    margin: 0.5rem;
+}
+
+
+/*----------------- MOBILE -------------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 570px){
+    nav{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #burger div{
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        border-radius: 10px;
+        transition: all linear 0.3s;
+    }
+
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 22px !important;
+    }
+    .swiper {
+        width: 100vw;
+        height: 200px;
+    }
+    .swiper-slide img {
+        width: 30%;
+    }
+    :hover#burger > div{
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        border-radius: 10px;
+    }
+    
+    #burger > div:nth-child(2){
+        width: 20px;
+    }
+    
+    #burger > div:nth-child(3){
+        width: 10px;
+    }
+
+    #burger.active > div:nth-child(1){
+        transform: rotate(40deg) translateY(18px);
+        width: 33px;
+    
+    }
+    
+    #burger.active > div:nth-child(3){
+        transform: rotate(-46deg) translateY(-19px);
+        width: 30px;
+    }
+    
+    .logo{
+        width: 7rem;
+    }
+
+    .barra-pesquisa{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    #input-pesquisa{
+        width: 9rem;
+        height: 0.2rem;
+        margin: 1rem;
+        
+    }
+    p{
+        font-size: 1.2rem;
+    };
+
+    .social{
+        text-align: center;
+        display: block;
+        padding: 0.5rem;
+    }
+    
+    .alinhar{
+        text-align: center;
+        display: block;
+        justify-content: space-around;
+    }
+
+    svg{
+        height: 30px;
+        width: 30px;
+    }
+
+    footer p{
+        font-size: large;
+    }
+
+
+    #menu-mobile{
+        display: block;
+        top: 0;
+        left: 0;
+        font-size: 0.5rem;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+        line-height: 10px;
+        transform: translateY(-100%);
+        opacity: 1;
+        justify-items: center;
+        z-index: 2;
+        
+    }
+
+    #menu-mobile.active{
+        transform: translateY(0);
+    }
+
+    #burger-div{
+        width: 20px;
+    }
+
+    #burger{
+        display: flex;
+    }
+
+    #menu-mobile ul{
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #menu-mobile li{
+        padding: 15px;
+        border-bottom: 2px solid rgb(53, 53, 53);
+    }
+
+    #ul-nav{
+        display: none;
+    }
+    
+
+    #menu-mobile a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.5rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #icons{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+   
+    .autor img{
+        height: 150px;
+    }
+    .autores{
+        
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .autor{
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .texto-seta img{
+        width: 90px;
+    }
+
+    .frase p{
+        justify-content: center;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        margin: 2rem 2rem;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .frase-invertida bdo{
+        justify-content: center;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        margin-right: 2rem;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0);
+        text-shadow: 20px -35px 5px rgb(176, 2, 31);
+    }
+
+    #boasvindas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
+    }
+    
+    #boasvindas img{
+        width: 250px;
+        height: 150px;
+        border-radius: 10px;
+        margin: 10px 0px 30px 0px;
+    }
+
+    .descricao{
+        max-width: 200px;
+        margin: 2rem;
+        display: block;
+    }
+    .descricao img{
+        margin: 1rem;
+        width: 150px;
+    }
+
+    .descricao p{
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+    .boxes img{
+        width: 200px;
+        height: 150px;
+    }
+
+}
+
