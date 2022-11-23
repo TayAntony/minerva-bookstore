@@ -399,7 +399,6 @@ input:focus{
     align-items: center;
     display: flex;
     min-width: 300px;
-    justify-content: space-between;
 }
 
 #produtos > div > div{
