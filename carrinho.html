@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -59,11 +59,16 @@
 
     <div class="container">
         <h1>Seu Carrinho</h1>
-        <p>Seu carrinho está vazio!</p>
-        <img src="carrossel/yuumi-triste.png" alt="">
-        <div id="produtos" style="color: white;"></div>
+        <div id="vazio">
+            <p>Seu carrinho está vazio!</p>
+            <img src="carrossel/yuumi-triste.png" alt="">
+        </div>
 
-        <p>TOTAL: R$XX.XX</p><button id="comprar" onclick="comprar()">COMPRAR</button>
+        <div id="produtos" style="color: white;"></div>
+        
+
+        <button id="comprar" onclick="total()">CALCULAR TOTAL</button>
+        <button id="comprar" onclick="comprar()">COMPRAR</button>
     
     </div>
 
