@@ -33,6 +33,7 @@ function addCarrinho(produto, preco, imagem){
 function exibirProdutos(){
     var contador = 0
     var codHtml = ''
+    carrinhoVazio()
     listaProdutos.forEach((products) => {
         codHtml += `<div><img src="${products.img}" alt="" style="width: 150px; padding: 1rem">
         <h2>${products.nome}</p>
@@ -44,7 +45,13 @@ function exibirProdutos(){
     document.getElementById('produtos').innerHTML = codHtml
     }
 }
-
+function carrinhoVazio(){
+    if ( document.getElementById('vazio') != null){
+    if ((listaProdutos.length) != 0){
+        document.getElementById('vazio').innerHTML = ""
+    }
+    }
+}
 function salvarCarrinho(){
     localStorage.setItem('loja', JSON.stringify(listaProdutos))
 }
@@ -53,10 +60,6 @@ function obterCarrinho(){
     if(localStorage.getItem('loja') != null){
         listaProdutos = JSON.parse(localStorage.getItem('loja'))
         exibirProdutos()
-    }
-    else{
-        innerHTML = `<p>Seu carrinho está vazio!</p>
-        <img src="carrossel/yuumi-triste.png" alt="">` 
     }
     
 }
@@ -67,6 +70,10 @@ function removerProduto(posicao){
     obterCarrinho()
 }
 
+function total(){
+    alert(`TOTAL DE R$ ${listaID[2]}`)
+}
+
 function comprar(){
     listaProdutos = []
     salvarCarrinho()
@@ -74,10 +81,5 @@ function comprar(){
         document.getElementById('produtos').innerHTML = null
         }
     alert("COMPRA REALIZADA")
-}
-
-
-function verProdutos(){
-    
 }
 obterCarrinho()
