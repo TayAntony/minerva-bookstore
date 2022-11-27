@@ -1,24 +1,25 @@
 const produto = document.getElementById('produto')
 const preco = document.getElementById('preco')
-carrinho = []
-listaProdutos = []
-listaID = [
+let carrinho = []
+let listaProdutos = []
+const listaID = [
     {id:0, nome: "Percy Jackson: O Ladrão de Raios", img:"carrossel/pjo1.png", preco:25.00},
     {id:1, nome: "Percy Jackson: O Mar de Monstros", img:"carrossel/pjo2.png", preco:25.00},
     {id:2, nome: "Percy Jackson: A Maldição do Titã", img:"carrossel/pjo3.png", preco:25.00},
-    {id:3, nome: "Percy Jackson: A Batalha no Labirinto", img:"carrossel/pjo3.png", preco:25.00},
-    {id:4, nome: "Percy Jackson: O Último Olimpiano", img:"carrossel/pjo3.png", preco:25.00},
+    {id:3, nome: "Percy Jackson: A Batalha no Labirinto", img:"carrossel/pjo4.png", preco:25.00},
+    {id:4, nome: "Percy Jackson: O Último Olimpiano", img:"carrossel/pjo5.png", preco:25.00},
     {id:5, nome: "Box: Trono de Vidro", img:"carrossel/tog.png", preco:175.00},
     {id:6, nome: "Box: A Corte de Espinhos e Rosas", img:"carrossel/acotar.png", preco:155.00},
     {id:7, nome: "Box: Estilhaça-me", img:"carrossel/estilhaca-me.png", preco:125.00},
 ]
+
 function adicionar(id){
-    var produto = listaID.find(x => x.id == id)
-    produtoNome = produto.nome
-    produtoImage = produto.img
-    produtoPreco = produto.preco
+    let produto = listaID.find(x => x.id == id)
+    let produtoNome = produto.nome
+    let produtoImage = produto.img
+    let produtoPreco = produto.preco
     addCarrinho(produtoNome, produtoPreco, produtoImage)
-    alert('Produto adicionado com sucesso!')
+    Swal.fire('Produto adicionado com sucesso!')
 }
 
 
@@ -45,11 +46,14 @@ function exibirProdutos(){
     document.getElementById('produtos').innerHTML = codHtml
     }
 }
+
 function carrinhoVazio(){
-    if ( document.getElementById('vazio') != null){
-    if ((listaProdutos.length) != 0){
-        document.getElementById('vazio').innerHTML = ""
-    }
+    if (document.getElementById('vazio')) {
+        if ((listaProdutos.length) != 0){
+            document.getElementById('vazio').style.display = 'none';
+        } else {
+            document.getElementById('vazio').style.display = 'block';
+        }
     }
 }
 function salvarCarrinho(){
@@ -71,7 +75,13 @@ function removerProduto(posicao){
 }
 
 function total(){
-    alert(`TOTAL DE R$ ${listaID[2]}`)
+    let valorTotal = 0;
+
+    listaProdutos.forEach(produto => {
+        valorTotal += produto.valor
+    })
+
+    Swal.fire(`TOTAL DE R$ ${valorTotal},00`)
 }
 
 function comprar(){
@@ -79,7 +89,8 @@ function comprar(){
     salvarCarrinho()
     if (document.getElementById('produtos') != null){
         document.getElementById('produtos').innerHTML = null
-        }
-    alert("COMPRA REALIZADA")
+    }
+    carrinhoVazio()
+    Swal.fire("COMPRA REALIZADA")
 }
 obterCarrinho()
