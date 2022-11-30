@@ -10,6 +10,12 @@ a{
     padding: 0.5rem;
 }
 
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .logo{
     width: 8rem;
 }
